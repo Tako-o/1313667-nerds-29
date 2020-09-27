@@ -1,3 +1,45 @@
+	/* roboto-regular - latin_cyrillic */
+
+@font-face {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 400;
+	src: local("Roboto"), local("Roboto-Regular"), url("../fonts/roboto-regular.woff2") format("woff2"),
+	url("../fonts/roboto-regular.woff") format("woff");
+}
+
+
+	/* roboto-700 - latin_cyrillic */
+
+@font-face {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 700;
+	src: local("Roboto Bold"), local("Roboto-Bold"), url("../fonts/roboto-700.woff2") format("woff2"), /* Super Modern Browsers */
+	url("../fonts/roboto-700.woff") format("woff");
+}
+
+
+	/* Variables */
+
+:root {
+	--black: #000000;
+	--white: #ffffff;
+	--red: #E74246;
+	--red-light: #FB565A;
+	--red-dark: #D7373B;
+	--green: #00BC6C;
+	--green-light: #00CA74;
+	--green-dark: #00AA62;
+	--yellow: #EAB534;
+	--yellow-light: #EFC849;
+	--yellow-dark: #E5A722;
+	--gray: #DFDFDF;
+	--gray-light: #EEEEEE;
+	--gray--dark: #D5D5D5;
+	--special: #888888;
+}
+
 .visually-hidden {
     position: absolute;
     
