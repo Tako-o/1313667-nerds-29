@@ -8,140 +8,165 @@
       <link href="css/style.css" rel="stylesheet">
    </head>
    <body>
-      <header>
-         <nav>
-            <a href="index.html">
-               <img src="https://via.placeholder.com/160x65" width="160" height="65" alt="Логотип «Нёрдс»">
+      <header class="main-header">
+         <nav class="main-navigation">
+            <a href="index.html" class="main-header-logo" aria-label="Переход на главную">
+               <img src="img/nerds-logo.svg" width="165" height="65" alt="Логотип Нёрдс">
             </a>
-            <ul>
+            <ul class="site-navigation reset-list">
                <li><a href="index.html">Главная</a></li>
                <li><a href="#">Студия</a></li>
                <li><a href="#">Клиенты</a></li>
                <li><a href="#">Магазин</a></li>
                <li><a href="#">Контакты</a></li>
             </ul>
-            <ul>
-               <li><a href="#">Корзина</a></li>
+            <ul class="user-navigation reset-list">
+               <li class="img-cart"><a href="#">Корзина</a></li>
             </ul>
          </nav>
       </header>
       <main>
-         <h1>Магазин готовых шаблонов</h1>                
-            <section>
-               <div>
-                  <h2  class="visually-hidden">Фильтр товаров</h2>
-                  <form name="filter" method="get">
-                     <div>
-                        <label>Сетка:</label>
-                        <label><input name="grid" type="radio" value="adaptive" checked>Адаптивная</label>
-                        <label><input name="grid" type="radio" value="fixed">Фиксированная</label>
-                        <label><input name="grid" type="radio" value="responsive">Резиновая</label>
-                     </div>
-                     <div>
-                        <label>Особенности:</label>
-                        <label><input name="slider" type="checkbox">Слайдер</label>
-                        <label><input name="advantage" type="checkbox">Блок преимуществ</label>
-                        <label><input name="news" type="checkbox">Новости</label>
-                        <label><input name="gallery" type="checkbox">Галерея</label>
-                        <label><input name="shopping-cart" type="checkbox">Корзина</label>
-                     </div>
-                     <button type="submit">Показать</button>         
-                  </form>
-               </div>
-            </section>
-            <section >
-               <h2 class="visually-hidden">Каталог товара</h2>
-               <ul>
-                  <li>
-                     <div>
-                        <img src="img/sedona.jpg" width="360" height="576" alt="Шаблон туристического сайта">
-                     </div>
-                     <section>
-                        <h3><a href="#">Sedona</a></h3>
-                        <p>Информационный сайт для туристов</p>
-                        <a href="#">9 900 &#8381;</a>
-                     </section>
-                  </li>
-                  <li>
-                     <div>
-                        <img src="img/pink.jpg" width="360" height="576" alt="Шаблон сайта для мобильного приложения">
-                     </div>
-                     <section>
-                        <h3><a href="#">Pink App</a></h3>
-                        <p>Продуктовый лендинг приложения для iOS и Android</p>
-                        <a href="#">9 900 &#8381;</a>
-                     </section>
-                  </li>
-                  <li>
-                     <div>
-                        <img src="img/borodinski.jpg" width="360" height="576" alt="Шаблон сайта барбершопа">
-                     </div>
-                     <section>
-                        <h3><a href="#">Barbershop</a></h3>
-                        <p>Сайт салона красоты. Для мужчин, да.</p>
-                        <a href="#">9 900 &#8381;</a>
-                     </section>
-                  </li>
-                  <li>
-                     <div>
-                        <img src="img/mishka.jpg" width="360" height="576" alt="Шаблон сайта хэндмэйд">
-                     </div>
-                     <section>
-                        <h3><a href="#">Mishka</a></h3>
-                        <p>Интернет-магазин вязаных игрушек</p>
-                        <a href="#"9 900 &#8381;</a>
-                     </section>
-                  </li>
-                  <li>
-                     <div>
-                        <img src="img/a-plus.jpg" width="360" height="576" alt="Шаблон учебного сайта">
-                     </div>
-                     <section>
-                        <h3><a href="#">A Plus</a></h3>
-                        <p>Лендинг курсов повышения квалификации</p>
-                        <a href="#">9 900 &#8381;</a>
-                     </section>
-                  </li>
-                  <li>
-                     <div>
-                        <img src="img/kvast.jpg" width="360" height="576" alt="Шаблон сайта крафтового кваса">
-                     </div>
-                     <section>
-                        <h3><a href="#">Кваст</a></h3>
-                        <p>Промо-сайт производителя крафтового кваса</p>
-                        <a href="#">9 900 &#8381;</a>
-                     </section>
-                  </li>
-               </ul>
-            </section>
+         <h1 class="heading-catalog">Магазин готовых шаблонов</h1>                
+         <section>
+            <div class="filter-form">
+               <h3  class="visually-hidden">Фильтр товаров</h3>
+               <form class="filter" name="filter" method="get">
+                  <div>
+                     <ul class="reset-list">
+                        <li>
+                           <label class="filter-type">Сетка:</label>
+                        </li>
+                        <li>
+                           <label><input name="grid" type="radio" value="adaptive" checked>Адаптивная</label>
+                        </li>
+                        <li>
+                           <label><input name="grid" type="radio" value="fixed">Фиксированная</label>
+                        </li>
+                        <li>
+                           <label><input name="grid" type="radio" value="responsive">Резиновая</label>
+                        </li>
+                     </ul>
+                  </div>
+                  <div>
+                     <ul class="reset-list">
+                        <li>
+                           <label class="filter-type">Особенности:</label>
+                        </li>
+                        <li>
+                           <label><input name="advantage" type="checkbox">Блок преимуществ</label>
+                        </li>
+                        <li>
+                           <label><input name="slider" type="checkbox">Слайдер</label>
+                        </li>
+                        <li>
+                           <label><input name="news" type="checkbox">Новости</label>
+                        </li>
+                        <li>
+                           <label><input name="gallery" type="checkbox">Галерея</label>
+                        </li>
+                        <li>
+                           <label><input name="shopping-cart" type="checkbox">Корзина</label>
+                        </li>
+                     </ul>
+                  </div>
+                  <button class="button-show" type="submit">Показать</button>         
+               </form>
+            </div>
+         </section>
+         <section class="catalog">
+            <h3 class="visually-hidden">Каталог товара</h3>
+            <ul class="catalog-list reset-list">
+               <li class="catalog-item">
+                  <div>
+                     <img src="img/sedona.jpg" width="360" height="576" alt="Шаблон туристического сайта">
+                  </div>
+                  <section class="catalog-info">
+                     <h3><a href="#">Sedona</a></h3>
+                     <p>Информационный сайт для туристов</p>
+                     <a href="#" class="price red">9 900 &#8381;</a>
+                  </section>
+               </li>
+               <li class="catalog-item">
+                  <div>
+                     <img src="img/pink.jpg" width="360" height="576" alt="Шаблон сайта для мобильного приложения">
+                  </div>
+                  <section class="catalog-info">
+                     <h3><a href="#">Pink App</a></h3>
+                     <p>Продуктовый лендинг приложения для iOS и Android</p>
+                     <a href="#" class="price red">9 900 &#8381;</a>
+                  </section>
+               </li>
+               <li class="catalog-item">
+                  <div>
+                     <img src="img/borodinski.jpg" width="360" height="576" alt="Шаблон сайта барбершопа">
+                  </div>
+                  <section class="catalog-info">
+                     <h3><a href="#">Barbershop</a></h3>
+                     <p>Сайт салона красоты. Для мужчин, да.</p>
+                     <a href="#" class="price red">9 900 &#8381;</a>
+                  </section>
+               </li>
+               <li class="catalog-item">
+                  <div>
+                     <img src="img/mishka.jpg" width="360" height="576" alt="Шаблон сайта хэндмэйд">
+                  </div>
+                  <section class="catalog-info">
+                     <h3><a href="#">Mishka</a></h3>
+                     <p>Интернет-магазин вязаных игрушек</p>
+                     <a href="#" class="price red">9 900 &#8381;</a>
+                  </section>
+               </li>
+               <li class="catalog-item">
+                  <div>
+                     <img src="img/a-plus.jpg" width="360" height="576" alt="Шаблон учебного сайта">
+                  </div>
+                  <section class="catalog-info">
+                     <h3><a href="#">A Plus</a></h3>
+                     <p>Лендинг курсов повышения квалификации</p>
+                     <a href="#" class="price red">9 900 &#8381;</a>
+                  </section>
+               </li>
+               <li class="catalog-item">
+                  <div>
+                     <img src="img/kvast.jpg" width="360" height="576" alt="Шаблон сайта крафтового кваса">
+                  </div>
+                  <section class="catalog-info">
+                     <h3><a href="#">Кваст</a></h3>
+                     <p>Промо-сайт производителя крафтового кваса</p>
+                     <a href="#" class="price red">9 900 &#8381;</a>
+                  </section>
+               </li>
+            </ul>
+         </section>
       </main>
       <footer>
-         <section>
+         <section class="contact">
+            <img src="img/map.png" width="1440" height="416" alt="Карта нашего сетоположения">
             <h3>NЁRDS DESIGN STUDIO</h3>
             <p>191186, Санкт-Петербург, ул. Б. Конюшенная,д. 19/8тел. +7 (812) 275-75-75</p>
             <a>Напишите нам</a>
          </section>
-         <section>
+         <section class="social">
             <h2 class="visually-hidden">Социальные сети Нёрдс</h2>
-            <ul>
+            <ul class="user-social reset-list">
                <li>
-                  <a href="http://vk.com" aria-label="Ссылка на наш VK">
-                  <img src="https://via.placeholder.com/18x18" width="18" height="18"  alt="Иконка VK">
+                  <a href="http://vk.com" class="icon-social" aria-label="Ссылка на наш VK">
+                     <img src="img/icon/vk-icon.svg"  width="18" height="18"  alt="Иконка VK">
                   </a>
                </li>
                <li>
-                  <a href="https://www.facebook.com/" aria-label="Ссылка на наш Facebook">
-                  <img src="https://via.placeholder.com/18x18" width="18" height="18" alt="Иконка Facebook">
+                  <a href="https://www.facebook.com/" class="icon-social"  aria-label="Ссылка на наш Facebook">
+                     <img src="img/icon/fb-icon.svg" width="18" height="18" alt="Иконка Facebook">
                   </a>
                </li>
                <li>
-                  <a href="https://www.instagram.com" aria-label="Ссылка на наш Instagramm">
-                  <img src="https://via.placeholder.com/18x18" width="18" height="18"  alt="Иконка Instagramm">
+                  <a href="https://www.instagram.com" class="icon-social" aria-label="Ссылка на наш Instagramm">
+                     <img src="img/icon/insta-icon.svg" width="18" height="18"  alt="Иконка Instagramm">
                   </a>
                </li>
             </ul>
          </section>
-         <section>
+         <section class="sale">
             <h2>Давайте дружить, это выгодно!</h2>
             <p>Скидка 10% для друзей из социальных сетей.</p>
          </section>

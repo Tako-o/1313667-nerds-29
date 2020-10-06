@@ -40,6 +40,83 @@
 	--special: #888888;
 }
 
+	/* Global */
+
+html {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	background-color: var(--white);
+	font-family: "Roboto", "Tahoma", sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.main-navigation {
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 30px;
+}
+
+.reset-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+	/* Main navigation */
+
+.main-navigation {
+
+}
+
+.site-navigation {
+		
+}
+
+.user-navigation {
+	
+}
+
+.site-navigation a {
+	color: var(--black);
+}
+
+.user-navigation a {
+	color: var(--black);
+}
+
+.img-cart {
+	background-image: url("../img/icon/cart-icon.svg");
+	background-position: top left;
+	background-repeat: no-repeat;
+}
+
+	/* User navigation */
+
+.main-header {
+	font-size: 16px;
+	line-height: 20px;
+	color: var(--black);
+	background-color: var(--gray-light);
+}
+
+.main-header-logo {
+	order: -1;
+	width: 160px;
+  	height: 65px;
+}
+
 .visually-hidden {
     position: absolute;
     
@@ -51,4 +128,177 @@
 
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
+
+	/* Footer */
+
+.contact {
+	font-size: 16px;
+}
+
+.social	{
+	
+}
+	
+.user-social {
+
+}
+	
+.sale {
+	font-size: 16px;
+}
+
+	/* Slider */
+
+.slider {
+
+}
+
+.slider-list {
+
+}
+
+	/* Features */
+
+.features {	
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.features-list {
+
+}
+
+.features h2 {
+	text-transform: uppercase;
+	font-size: 24px;
+	line-height: 30px;	
+}
+
+.features-item {
+	background-position: top left;
+  	background-repeat: no-repeat; 
+}
+
+.web-site {
+	background-image: url("../img/web-site.jpg");
+	background-size: auto auto;
+}
+
+.application {
+	background-image: url("../img/application.jpg");
+	background-size: auto auto;
+}
+
+.presentations {
+	background-image: url("../img/presentations.jpg");
+	background-size: auto auto;
+}
+
+.red {
+	background-color: var(--red-light);
+}
+
+.green {
+	background-color: var(--green-light);
+}
+
+.yellow {
+	background-color: var(--yellow-light);
+}
+
+	/* About-us */
+
+.about-us {
+	font-family: "Roboto", "Tahoma", sans-serif;
+	font-size: 16px;
+}
+
+.about-us-header {
+	font-size: 45px;
+	line-height: 45px;
+}
+
+.about-us-paragraph {
+	font-weight: bold;
+	line-height: 24px;
+}
+
+/* Catalog-filter */
+
+.filter {
+	
+}
+
+.button-show:hover {
+	background-color: var(--gray);
+}
+
+.button-show:focus {	
+	box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+
+	background-color: var(--gray-dark);
+}
+
+.button-show {
+	width: 260px;
+  	height: 50px;	
+	border-radius: 3px;
+	border: 1px solid var(--white);
+
+	background-color: var(--gray-light);
+}
+
+.filter-form {
+
+}
+
+.filter {
+	font-family: "Roboto", "Tahoma", sans-serif;
+	font-size: 16px;	
+}
+
+.filter-type {
+	font: inherit;
+	font-size: 18px;
+	font-weight: bold;
+}
+ 
+ 	/* Catalog*/
+
+.heading-catalog {
+	background-color: var(--gray-light);
+	margin: 0;
+	text-align: center;
+	font-size: 55px;
+}
+
+.catalog-list {
+	font-family: "Roboto", "Tahoma", sans-serif;
+	font-size: 16px;
+}
+
+.catalog h3 {
+	font-size: 18px;
+}
+
+.price {	
+	border: 1px solid;
+	border-radius: 3px;
+	padding: 17px 72px 15px 72px;
+
+	font: inherit;
+	text-align: center;
+	text-transform: uppercase;
+
+	color: var(--white);
+	background-color: var(--red-light);
+}
+
+.catalog-info {
+
+}
+
+.catalog-item {
+
 }
