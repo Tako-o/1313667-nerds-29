@@ -42,16 +42,6 @@
 
 	/* Global */
 
-html {
-	height: 100%;
-	width: 100%;
-}
-
-body {
-	background-color: var(--white);
-	font-family: "Roboto", "Tahoma", sans-serif;
-}
-
 a {
 	text-decoration: none;
 }
@@ -61,60 +51,27 @@ img {
 	height: auto;
 }
 
-.main-navigation {
-	text-transform: uppercase;
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 30px;
+	/* Grid */
+
+.page {
+	height: 100%;
+	width: 100%;
+
+	display: grid;
+	grid-template-rows: min-content 1fr min-content;
+}
+
+.page-body {
+	min-height: 100%;
+
+	background-color: var(--white);
+	font-family: "Roboto", "Tahoma", sans-serif;
 }
 
 .reset-list {
 	margin: 0;
 	padding: 0;
 	list-style: none;
-}
-
-	/* Main navigation */
-
-.main-navigation {
-
-}
-
-.site-navigation {
-		
-}
-
-.user-navigation {
-	
-}
-
-.site-navigation a {
-	color: var(--black);
-}
-
-.user-navigation a {
-	color: var(--black);
-}
-
-.img-cart {
-	background-image: url("../img/icon/cart-icon.svg");
-	background-position: top left;
-	background-repeat: no-repeat;
-}
-
-	/* User navigation */
-
-.main-header {
-	font-size: 16px;
-	line-height: 20px;
-	color: var(--black);
-	background-color: var(--gray-light);
-}
-
-.main-header-logo {
-	order: -1;
-	width: 160px;
-  	height: 65px;
 }
 
 .visually-hidden {
@@ -130,14 +87,124 @@ img {
     overflow: hidden;
 }
 
+	/* Main navigation */
+
+.main-navigation {
+	align-items: flex-start;
+	flex-direction: row;
+
+	width: 1200px;
+	margin: 0 auto;
+	padding: 0 10px;
+
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 30px;
+}
+
+
+.main-navigation-container {
+	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+
+	width: 1200px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+.site-navigation {
+	width: 620px;
+  	margin: 0;
+  	margin-left: 202px;
+  	padding: 0;	
+}
+
+.user-navigation {
+	margin-left: auto;
+	padding: 0;
+	max-width: 140px;	
+}
+
+.site-navigation a {
+	color: var(--black);
+}
+
+.user-navigation li {
+	display: inline;
+	padding: 0;	
+}
+
+.user-navigation a {
+	color: var(--black);
+	margin: 40px;
+}
+
+.site-navigation-current a:not([href]) {
+	background-color: var(--black);
+}
+
+
+.site-navigation a:hover {
+	color: var(--red-light);
+}
+
+.site-navigation a:focus {
+	color: var(--black);
+	mix-blend-mode: normal;
+	opacity: 0.3;
+}
+
+.user-navigation a:hover {
+	color: var(--red-light);
+}
+
+.user-navigation a:focus {
+	color: var(--black);
+	mix-blend-mode: normal;
+	opacity: 0.3;
+}
+
+.main-header {
+	font-size: 16px;
+	line-height: 20px;
+	color: var(--black);
+	background-color: var(--gray-light);
+}
+
+.main-header-logo {
+	order: 0;
+	width: 160px;
+  	height: 65px;
+}
+
+.img-cart {
+	background-image: url("../img/icon/cart-icon.svg");
+	background-position: top left;
+	background-repeat: no-repeat;
+}
+
 	/* Footer */
+
+.footer-container {
+	width: 1200px;
+  	margin: 0 auto;
+  	padding: 0 10px;
+}
+
+.footer-wrapper {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+}
 
 .contact {
 	font-size: 16px;
 }
 
 .social	{
-	
+	width: 260px;
+	margin: 0;
 }
 	
 .user-social {
@@ -145,28 +212,50 @@ img {
 }
 	
 .sale {
+	width: 660px;
+
 	font-size: 16px;
+}
+	/* Page Index */
+
+.main-index {
+	width: 1200px;
+  	margin: 0 auto;
+  	padding: 0 10px;
 }
 
 	/* Slider */
 
 .slider {
-
+	background-color: var(--gray-light);
 }
 
 .slider-list {
-
+	display: grid;
+	grid-template-columns: 1fr;
+	
+  	margin: 0;
+  	padding: 0;
+  	list-style: none;
 }
 
 	/* Features */
 
 .features {	
+	margin-top: 80px;
+
 	font-size: 16px;
 	line-height: 24px;
 }
 
 .features-list {
-
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	column-gap: 100px;
+	  
+  	margin: 0;
+  	padding: 0;
+  	list-style: none;
 }
 
 .features h2 {
@@ -176,6 +265,9 @@ img {
 }
 
 .features-item {
+	margin: 0;
+  	padding: 0;
+
 	background-position: top left;
   	background-repeat: no-repeat; 
 }
@@ -195,21 +287,67 @@ img {
 	background-size: auto auto;
 }
 
+.order {
+	display: inline-block;
+	border: 0px solid;
+	border-radius: 3px;
+	padding: 17px 40px 15px 40px;
+	
+	line-height: 18px;
+	text-align: center;
+	text-transform: uppercase;
+
+	color: var(--white);
+}
+
 .red {
 	background-color: var(--red-light);
+
+}
+
+.red:hover {
+	background-color: var(--red);
+}
+
+.red:focus {
+	box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+	background-color: var(--red-dark);
 }
 
 .green {
 	background-color: var(--green-light);
 }
 
+.green:hover {
+	background-color: var(--green);
+}
+
+.green:focus {
+	box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+	background-color: var(--green-dark);
+}
+
 .yellow {
 	background-color: var(--yellow-light);
 }
 
+.yellow:hover {
+	background-color: var(--yellow);
+}
+
+.yellow:focus {
+	box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+	background-color: var(--yellow-dark);
+}
+
+
 	/* About-us */
 
 .about-us {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	column-gap: 140px;
+
 	font-family: "Roboto", "Tahoma", sans-serif;
 	font-size: 16px;
 }
@@ -224,7 +362,40 @@ img {
 	line-height: 24px;
 }
 
-/* Catalog-filter */
+	/* Partners */
+
+.partners {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+	/* Page Catalog */
+
+.main-catalog {
+
+}
+
+.main-catalog-wrapper {
+	display: grid;
+  	grid-template-columns: 260px 1fr;
+	align-content: start;
+	
+	width: 1200px;
+  	margin: 0 auto;
+	padding: 0 10px;
+}
+
+.heading-catalog {	
+	margin: 0;
+	padding-top: 80px;
+	padding-bottom: 117px;
+	
+	text-align: center;
+	font-size: 55px;
+	background-color: var(--gray-light);
+}
+
+	/* Catalog-filter */
 
 .filter {
 	
@@ -250,10 +421,12 @@ img {
 }
 
 .filter-form {
-
+	width: 260px;
 }
 
 .filter {
+
+
 	font-family: "Roboto", "Tahoma", sans-serif;
 	font-size: 16px;	
 }
@@ -264,22 +437,36 @@ img {
 	font-weight: bold;
 }
  
- 	/* Catalog*/
-
-.heading-catalog {
-	background-color: var(--gray-light);
-	margin: 0;
-	text-align: center;
-	font-size: 55px;
+	 /* Catalog*/
+	 
+.catalog {
+	margin-left: 140px;
 }
 
 .catalog-list {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 55px;
+
 	font-family: "Roboto", "Tahoma", sans-serif;
 	font-size: 16px;
 }
 
 .catalog h3 {
+	margin-top: 26px;
+	margin-right: auto;
+	margin-bottom: 12px;
+	margin-left: auto;
+
 	font-size: 18px;
+	line-height: 30px;
+}
+
+.catalog-item-image {
+	width: 358px;
+	height: 578px;
 }
 
 .price {	
@@ -296,9 +483,16 @@ img {
 }
 
 .catalog-info {
+	display: grid;
+	justify-content: center;
 
+	margin-top: 26px;
+	margin-bottom: 12px;
 }
 
 .catalog-item {
-
+	width: 358px;
+ 	min-height: 578px;
+  	margin-right: 40px;
+  	margin-bottom: 30px;
 }
