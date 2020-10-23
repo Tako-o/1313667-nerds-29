@@ -90,8 +90,8 @@ img {
 	/* Main navigation */
 
 .main-navigation {
+	display: flex;
 	align-items: flex-start;
-	flex-direction: row;
 
 	width: 1200px;
 	margin: 0 auto;
@@ -115,6 +115,10 @@ img {
 }
 
 .site-navigation {
+	display: flex;
+	flex-wrap: wrap;
+
+
 	width: 620px;
   	margin: 0;
   	margin-left: 202px;
@@ -174,7 +178,6 @@ img {
 }
 
 .main-header-logo {
-	order: 0;
 	width: 160px;
   	height: 65px;
 }
@@ -463,8 +466,8 @@ img {
 }
 
 .catalog-item-image {
-	width: 358px;
-	height: 578px;
+	width: 360px;
+	height: 580px;
 }
 
 .price {	
