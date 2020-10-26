@@ -106,11 +106,10 @@ img {
 
 .main-navigation-container {
 	display: flex;
-  	flex-direction: column;
-  	align-items: center;
 
 	width: 1200px;
 	margin: 0 auto;
+	margin-top: 75px;
 	padding: 0 10px;
 }
 
@@ -118,11 +117,18 @@ img {
 	display: flex;
 	flex-wrap: wrap;
 
-
 	width: 620px;
   	margin: 0;
   	margin-left: 202px;
   	padding: 0;	
+}
+
+.site-navigation li {
+	margin-right: 47px;
+}
+
+.site-navigation li:last-child {
+	margin-right: 0;
 }
 
 .user-navigation {
@@ -178,6 +184,9 @@ img {
 }
 
 .main-header-logo {
+	margin: 0;
+	margin-top: 50px;
+
 	width: 160px;
   	height: 65px;
 }
@@ -197,8 +206,7 @@ img {
 }
 
 .footer-wrapper {
-	display: grid;
-	grid-template-columns: 1fr 2fr;
+	display: flex;
 }
 
 .contact {
@@ -208,14 +216,11 @@ img {
 .social	{
 	width: 260px;
 	margin: 0;
-}
-	
-.user-social {
-
+	margin-right: 140px;
 }
 	
 .sale {
-	width: 660px;
+	width: 540px;
 
 	font-size: 16px;
 }
@@ -246,33 +251,46 @@ img {
 
 .features {	
 	margin-top: 80px;
+	margin-bottom: 80px;
 
 	font-size: 16px;
 	line-height: 24px;
 }
 
 .features-list {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	column-gap: 100px;
-	  
-  	margin: 0;
+	display: flex;	
   	padding: 0;
-  	list-style: none;
+
+}
+
+.features-list li {
+	margin-right: 100px;
+}
+
+.features-list li:last-child {
+	margin-right: 0;
 }
 
 .features h2 {
+	margin-bottom: 0;
+	margin-top: 171px;
+
 	text-transform: uppercase;
 	font-size: 24px;
 	line-height: 30px;	
 }
 
 .features-item {
-	margin: 0;
-  	padding: 0;
+	width: 300px;
+	height: 352px;
 
 	background-position: top left;
-  	background-repeat: no-repeat; 
+  	background-repeat: no-repeat;  	
+}
+
+.features-item  p {
+	width: 260px;
+	margin-bottom: 32px;
 }
 
 .web-site {
@@ -347,9 +365,11 @@ img {
 	/* About-us */
 
 .about-us {
-	display: grid;
-	grid-template-columns: 2fr 1fr;
-	column-gap: 140px;
+	display: flex;
+	justify-content: space-between;
+
+	margin-top: 40px;
+	margin-bottom: 75px;
 
 	font-family: "Roboto", "Tahoma", sans-serif;
 	font-size: 16px;
@@ -365,43 +385,63 @@ img {
 	line-height: 24px;
 }
 
+.about-us-lists {
+	width: 660px;
+}
+
+.about-us-dignity {
+	justify-self: right;
+
+	width: 360px;
+}
+
 	/* Partners */
 
 .partners {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
+	display: flex;
+	justify-content: space-around;
+
+	margin-top: 46px;
 }
 
 	/* Page Catalog */
 
-.main-catalog {
+/*.main-catalog {
 
-}
+}*/
 
 .main-catalog-wrapper {
-	display: grid;
-  	grid-template-columns: 260px 1fr;
-	align-content: start;
-	
+	display: flex;
+
 	width: 1200px;
   	margin: 0 auto;
 	padding: 0 10px;
 }
 
-.heading-catalog {	
-	margin: 0;
+.heading-catalog-wrapper {
+	background-color: var(--gray-light);
+}
+
+.heading-catalog {
+	display: flex;
+	justify-content: center;
+
+	width: 1200px;
+  	margin: 0 auto;
+	padding: 0 10px;
 	padding-top: 80px;
 	padding-bottom: 117px;
 	
 	text-align: center;
 	font-size: 55px;
-	background-color: var(--gray-light);
+	
 }
 
 	/* Catalog-filter */
 
 .filter {
-	
+	display: flex;
+	flex-wrap: wrap;	
 }
 
 .button-show:hover {
@@ -484,8 +524,11 @@ img {
 }
 
 .catalog-info {
-	display: grid;
-	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+
+	width: 200px;
 
 	margin-top: 26px;
 	margin-bottom: 12px;
