@@ -9,48 +9,52 @@
    </head>
    <body class="page-body">
       <header class="main-header">
-         <nav class="main-navigation">
+         <nav class="main-navigation container">
             <a class="main-header-logo" aria-label="Переход на главную">
-               <img src="img/nerds-logo.svg" width="165" height="65" alt="Логотип Нёрдс">
+            <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс">
             </a>
             <div class="main-navigation-container">
-                  <ul class="site-navigation reset-list">
-                     <li><a href="#">Студия</a></li>
-                     <li><a href="#">Клиенты</a></li>
-                     <li><a href="catalog.html">Магазин</a></li>
-                     <li><a href="#">Контакты</a></li>
-                  </ul>
-                  <ul class="user-navigation reset-list">
-                     <li class="img-cart"><a href="#">Корзина</a></li>
-                  </ul>
+               <ul class="site-navigation reset-list">
+                  <li><a href="#">Студия</a></li>
+                  <li><a href="#">Клиенты</a></li>
+                  <li><a href="catalog.html">Магазин</a></li>
+                  <li><a href="#">Контакты</a></li>
+               </ul>
+               <ul class="user-navigation reset-list">
+                  <li class="cart-link"><a href="#">Корзина</a></li>
+               </ul>
             </div>
          </nav>
       </header>
       <main class="main-index">
          <h1 class="visually-hidden">Дизайн-студия «Нёрдс»</h1>
-         <!--<section class="slider">
-            <ul class="slider-list reset-list">
-               <li class="slider-item">
-                  <h3>Долго, дорого, скрупулезно.</h3>
-                  <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-                  <a href="#" class="order red">Узнать больше</a>
-                  <img src="img/nerds-slide1.png" width="760" height="431" alt="Слайд с телефонами">
-               </li>
-               <li class="slider-item">
-                  <h3>Любим математику как ни кто другой</h3>
-                  <p>Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
-                  <a href="#" class="order red">Узнать больше</a>
-                  <img src="img/nerds-slide2.png" width="760" height="431" alt="Слайд с мониторами">
-               </li>
-               <li class="slider-item">
-                  <h3>Только ночь, только хардкор</h3>
-                  <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-                  <a href="#" class="order red">Узнать больше</a>
-                  <img src="img/nerds-slide3.png" width="760" height="431" alt="Слайд с планшетами">
-               </li>
-            </ul>
-         </section>-->
-         <section class="features">
+         <div class="slider-background">
+            <section class="slider container">
+               <ul class="slider-list reset-list">
+                  <li class="slider-item">
+                     <div class="slider-info">
+                        <h3>Долго, дорого, скрупулезно.</h3>
+                        <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+                        <a href="#" class="order red">Узнать больше</a>
+                     </div>
+                     <img src="img/nerds-slide1.png" width="760" height="431" alt="Слайд с телефонами">
+                  </li>
+                  <!--<li class="slider-item">
+                     <h3>Любим математику как ни кто другой</h3>
+                     <p>Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
+                     <a href="#" class="order red">Узнать больше</a>
+                     <img src="img/nerds-slide2.png" width="760" height="431" alt="Слайд с мониторами">
+                     </li>
+                     <li class="slider-item">
+                     <h3>Только ночь, только хардкор</h3>
+                     <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+                     <a href="#" class="order red">Узнать больше</a>
+                     <img src="img/nerds-slide3.png" width="760" height="431" alt="Слайд с планшетами">
+                     </li>-->
+               </ul>
+            </section>
+         </div>
+         <section class="features container">
             <ul class="features-list reset-list">
                <li class="features-item web-site">
                   <h2>Веб-сайты</h2>
@@ -59,58 +63,58 @@
                </li>
                <li class="features-item application">
                   <h2>Приложения</h2>
-                  <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+                  <p>Покорите топ-10 приложений<br />в AppStore и Google Play</p>
                   <a href="#" class="order green">Заказать</a>
                </li>
                <li class="features-item presentations">
-                  <h2>Призентации</h2>
+                  <h2>Презентации</h2>
                   <p>Вы даже не подозреваете, насколько вы изумительны!</p>
                   <a href="#" class="order yellow">Заказать</a>
                </li>
             </ul>
          </section>
-         <section class="about-us">
+         <section class="about-us container">
             <div class="about-us-lists">
-            <h2 class="about-us-header">Мы — маленькая, но гордая дизайн-студия из Краснодара.</h2>
-            <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчетпревыше креатива. Работаем не покладая рук, как роботы.</p>
-            <p class="about-us-paragraph">Выполняем заказы на разработку:</p>
-            <ul>
-               <li>Веб-сайтов любой сложности</li>
-               <li>Мобильных приложений для iOS и Android</li>
-               <li>Слайдшоу и видео для корпоративных презентаций</li>
-            </ul>
+               <h2 class="about-us-header">Мы — маленькая, но гордая дизайн-студия из Краснодара.</h2>
+               <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчетпревыше креатива. Работаем не покладая рук, как роботы.</p>
+               <p class="about-us-paragraph">Выполняем заказы на разработку:</p>
+               <ul>
+                  <li>Веб-сайтов любой сложности</li>
+                  <li>Мобильных приложений для iOS и Android</li>
+                  <li>Слайдшоу и видео для корпоративных презентаций</li>
+               </ul>
             </div>
             <div class="about-us-dignity">
-            <img src="img/nerds-illustration.png" width="360" height="208" alt="Нёрдс">
-            <p class="about-us-paragraph">с 2004 года Любим точность во всем:</p>
-            <ul>
-               <li>146% Уровень самоотдачи</li>
-               <li>100% Соблюдение сроков</li>
-               <li>50% Минимальная предоплата</li>
-            </ul>
-            </div>                        
+               <img src="img/nerds-illustration.png" width="360" height="208" alt="Нёрдс">
+               <p class="about-us-paragraph">с 2004 года Любим точность во всем:</p>
+               <ul>
+                  <li>146% Уровень самоотдачи</li>
+                  <li>100% Соблюдение сроков</li>
+                  <li>50% Минимальная предоплата</li>
+               </ul>
+            </div>
          </section>
-         <section class="">
+         <section class="container">
             <h2 class="visually-hidden">Партнёры</h2>
             <ul class="partners reset-list">
                <li>
                   <a href="https://htmlacademy.ru/" aria-label="Ссылка на html academy">
-                  <img src="img/logo-htmlacademy.svg" width="200" height="80" alt="Логотип html academy">
+                  <img src="img/logo-htmlacademy.svg" width="199" height="68" alt="Логотип html academy">
                   </a>
                </li>
                <li>
                   <a href="#" aria-label="Ссылка на сайт барбершопа Borodinski">
-                  <img src="img/logo-borodinski.svg" width="200" height="80" alt="Логотип Borodinski">
+                  <img src="img/logo-borodinski.svg" width="209" height="90" alt="Логотип Borodinski">
                   </a>
                </li>
                <li>
                   <a href="#" aria-label="Ссылка на приложение Pink">
-                  <img src="img/logo-pink.svg" width="200" height="80" alt="Логотип Pink">
+                  <img src="img/logo-pink.svg" width="185" height="52" alt="Логотип Pink">
                   </a>
                </li>
                <li>
                   <a href="#" aria-label="Ссылка на сайт Mishka">
-                  <img src="img/logo-mishka.svg" width="200" height="80" alt="Логотип Mishka">
+                  <img src="img/logo-mishka.svg" width="173" height="84" alt="Логотип Mishka">
                   </a>
                </li>
             </ul>
@@ -122,32 +126,32 @@
             <h3>NЁRDS DESIGN STUDIO</h3>
             <p>191186, Санкт-Петербург, ул. Б. Конюшенная,д. 19/8тел. +7 (812) 275-75-75</p>
             <a href="#" class="order red">Напишите нам</a>
-         </section>-->
+            </section>-->
          <div class="footer-wrapper">
-         <section class="social">
-            <h2 class="visually-hidden">Социальные сети Нёрдс</h2>
-            <ul class="user-social reset-list">
-               <li>
-                  <a href="http://vk.com" class="icon-social" aria-label="Ссылка на наш VK">
-                     <img src="img/icon/vk-icon.svg"  width="18" height="18"  alt="Иконка VK">
-                  </a>
-               </li>
-               <li>
-                  <a href="https://www.facebook.com/" class="icon-social"  aria-label="Ссылка на наш Facebook">
-                     <img src="img/icon/fb-icon.svg" width="18" height="18" alt="Иконка Facebook">
-                  </a>
-               </li>
-               <li>
-                  <a href="https://www.instagram.com" class="icon-social" aria-label="Ссылка на наш Instagramm">
-                     <img src="img/icon/insta-icon.svg" width="18" height="18"  alt="Иконка Instagramm">
-                  </a>
-               </li>
-            </ul>
-         </section>
-         <section class="sale">
-            <h2>Давайте дружить, это выгодно!</h2>
-            <p>Скидка 10% для друзей из социальных сетей.</p>
-         </section>
+            <section class="social">
+               <h2 class="visually-hidden">Социальные сети Нёрдс</h2>
+               <ul class="user-social reset-list">
+                  <li>
+                     <a class="icon-social" href="http://vk.com" aria-label="Ссылка на наш VK">
+                     <img class="img-social" src="img/icon/vk-icon.svg"  width="26" height="15"  alt="Иконка VK">
+                     </a>
+                  </li>
+                  <li>
+                     <a class="icon-social" href="https://www.facebook.com/" aria-label="Ссылка на наш Facebook">
+                     <img class="img-social" src="img/icon/fb-icon.svg" width="12" height="22" alt="Иконка Facebook">
+                     </a>
+                  </li>
+                  <li>
+                     <a class="icon-social" href="https://www.instagram.com" aria-label="Ссылка на наш Instagramm">
+                     <img class="img-social" src="img/icon/insta-icon.svg" width="21" height="21"  alt="Иконка Instagramm">
+                     </a>
+                  </li>
+               </ul>
+            </section>
+            <section class="sale">
+               <h2>Давайте дружить, это выгодно!</h2>
+               <p>Скидка 10% для друзей из социальных сетей.</p>
+            </section>
          </div>
       </footer>
    </body>
