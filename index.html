@@ -28,7 +28,7 @@
       </header>
       <main class="main-index">
          <h1 class="visually-hidden">Дизайн-студия «Нёрдс»</h1>
-         <div class="slider-background">
+         <!--<div class="slider-background">
             <section class="slider container">
                <ul class="slider-list reset-list">
                   <li class="slider-item">
@@ -39,7 +39,7 @@
                      </div>
                      <img src="img/nerds-slide1.png" width="760" height="431" alt="Слайд с телефонами">
                   </li>
-                  <!--<li class="slider-item">
+                  <li class="slider-item">
                      <h3>Любим математику как ни кто другой</h3>
                      <p>Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
                      <a href="#" class="order red">Узнать больше</a>
@@ -50,10 +50,10 @@
                      <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
                      <a href="#" class="order red">Узнать больше</a>
                      <img src="img/nerds-slide3.png" width="760" height="431" alt="Слайд с планшетами">
-                     </li>-->
+                     </li>
                </ul>
             </section>
-         </div>
+         </div>-->
          <section class="features container">
             <ul class="features-list reset-list">
                <li class="features-item web-site">
@@ -121,12 +121,12 @@
          </section>
       </main>
       <footer class="footer-container">
-         <!-- <section class="contact">
-            <img src="img/map.png" width="1440" height="416" alt="Карта нашего сетоположения">
+         <section class="contact">
+            <!-- <img src="img/map.png" width="1440" height="416" alt="Наш адрес Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">-->
             <h3>NЁRDS DESIGN STUDIO</h3>
             <p>191186, Санкт-Петербург, ул. Б. Конюшенная,д. 19/8тел. +7 (812) 275-75-75</p>
             <a href="#" class="order red">Напишите нам</a>
-            </section>-->
+         </section>
          <div class="footer-wrapper">
             <section class="social">
                <h2 class="visually-hidden">Социальные сети Нёрдс</h2>
@@ -152,7 +152,25 @@
                <h2>Давайте дружить, это выгодно!</h2>
                <p>Скидка 10% для друзей из социальных сетей.</p>
             </section>
-         </div>
+         </div>         
       </footer>
+      <section class="modal modal-contact">
+         <h2 class="modal-contact-header">Напишите нам</h2>
+         <form class="modal-contact-form" action="https://echo.htmlacademy.ru/" method="post">
+           <label class="form-user-name" for="modal-contact-form-name">
+             Ваше имя:
+             <input class="form-input-user-name" type="text" name="input-name" id="modal-contact-form-name" placeholder="Имя Фамилия" required>
+           </label>
+           <label class="form-user-email" for="modal-contact-form-email">
+             Ваш email:
+             <input class="form-input-user-email" type="email" name="input-email" id="modal-contact-form-email" placeholder="email@example.com" required>
+           </label>
+           <label class="form-user-message" for="modal-contact-form-message">Текст письма:
+             <textarea id="modal-contact-form-message" rows="5" name="input-message"  placeholder="В свободной форме" required></textarea>
+           </label>
+           <button type="submit" class="modal-contact-form-button red">Отправить</button>
+         </form>
+         <button type="button" class="modal-close" aria-label="Закрыть"></button>
+       </section>
    </body>
 </html>
