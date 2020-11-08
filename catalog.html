@@ -17,7 +17,7 @@
                <ul class="site-navigation reset-list">
                   <li><a href="index.html">Студия</a></li>
                   <li><a href="#">Клиенты</a></li>
-                  <li><a href="#">Магазин</a></li>
+                  <li class="page-catalog"><a href="#">Магазин</a></li>
                   <li><a href="#">Контакты</a></li>
                </ul>
                <ul class="user-navigation reset-list">
@@ -34,23 +34,16 @@
             <section>
                <div class="filter-form">
                   <h3  class="visually-hidden">Фильтр товаров</h3>
-                  <form class="filter" name="filter" method="get">
-                     <fieldset class="filter-item">
+                  <form class="filter" action = "https://echo.htmlacademy.ru/" name="filter" method="get">
+                     <fieldset class="filter-fieldset filter-item">
                         <legend>Стоимость:</legend>
                         <div class="range-filter">
                            <div class="range-controls">
                               <div class="scale">
-                                 <div class="bar" style="
-                                    width: 60%;
-                                    margin-left: 10%
-                                    "></div>
+                                 <div class="bar"></div>
                               </div>
-                              <div class="toggle toggle-min" tabindex="0" style="
-                                 left: 10%
-                                 "></div>
-                              <div class="toggle toggle-max" tabindex="0" style="
-                                 left: 60%
-                                 "></div>
+                              <div class="toggle toggle-min" tabindex="0"></div>
+                              <div class="toggle toggle-max" tabindex="0"></div>
                            </div>
                            <div class="price-controls">
                               <label class="min-price">
@@ -62,7 +55,7 @@
                            </div>
                         </div>
                      </fieldset>
-                     <fieldset>
+                     <fieldset class="filter-fieldset filter-item-grid">
                         <legend>Сетка:</legend>
                         <ul class="reset-list">
                            <li class="filter-option filter-radio">
@@ -79,17 +72,17 @@
                            </li>
                         </ul>
                      </fieldset>
-                     <fieldset>
+                     <fieldset class="filter-fieldset">
                         <legend>Особенности:</legend>
                         <ul class="reset-list">
-                           <li class="filter-option filter-checkbox">
-                              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="advantage" id="filter-advantage" checked>
-                              <label for="filter-advantage">Блок преимуществ</label>                           
-                           </li>
                            <li class="filter-option filter-checkbox">
                               <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="slider" id="filter-slider" checked>
                               <label for="filter-slider">Слайдер</label>                           
                            </li>
+                           <li class="filter-option filter-checkbox">
+                              <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="advantage" id="filter-advantage" checked>
+                              <label for="filter-advantage">Блок преимуществ</label>                           
+                           </li>                           
                            <li class="filter-option filter-checkbox">
                               <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="news" id="filter-news" checked>
                               <label for="filter-news">Новости</label>                           
@@ -173,14 +166,13 @@
                      </section>
                   </li>
                </ul>
-               </ul>
                </div>
                <ul class="catalog-pagination">
                   <li class="catalog-pagination-item-current"><a href="#">1</a></li>
                   <li class="catalog-pagination-item"><a href="#">2</a></li>
                   <li class="catalog-pagination-item"><a href="#">3</a></li>
                   <li class="catalog-pagination-item"><a href="#">следующая</a></li>
-                </ul>
+               </ul>
             </section>
          </div>
       </main>
@@ -218,5 +210,23 @@
             </section>
          </div>
       </footer>
+      <!--<section class="modal modal-contact">
+         <h2 class="modal-contact-header">Напишите нам</h2>
+         <form class="modal-contact-form" action="https://echo.htmlacademy.ru/" method="post">
+           <label class="form-user-name" for="modal-contact-form-name">
+             Ваше имя:
+             <input class="form-input-user-name" type="text" name="input-name" id="modal-contact-form-name" placeholder="Имя Фамилия" required>
+           </label>
+           <label class="form-user-email" for="modal-contact-form-email">
+             Ваш email:
+             <input class="form-input-user-email" type="email" name="input-email" id="modal-contact-form-email" placeholder="email@example.com" required>
+           </label>
+           <label class="form-user-message" for="modal-contact-form-message">Текст письма:
+             <textarea id="modal-contact-form-message" rows="5" name="input-message"  placeholder="В свободной форме" required></textarea>
+           </label>
+           <button type="submit" class="modal-contact-form-button red">Отправить</button>
+         </form>
+         <button type="button" class="modal-close" aria-label="Закрыть"></button>
+       </section>-->
    </body>
 </html>
