@@ -42,8 +42,8 @@
                               <div class="scale">
                                  <div class="bar"></div>
                               </div>
-                              <div class="toggle toggle-min" tabindex="0"></div>
-                              <div class="toggle toggle-max" tabindex="0"></div>
+                              <div class="toggle toggle-min" tabindex="0" aria-label="Ползунок уменьшения стоимости"></div>
+                              <div class="toggle toggle-max" tabindex="0" aria-label="Ползунок увеличения стоимости"></div>
                            </div>
                            <div class="price-controls">
                               <label class="min-price">
@@ -177,12 +177,14 @@
          </div>
       </main>
       <footer class="footer-container">
-         <section class="contact">
-            <!-- <img src="img/map.png" width="1440" height="416" alt="Наш адрес Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">-->
-            <h2 class="footer-title">Nёrds design studio</h2>
-            <address class="footer-address">191186, Санкт-Петербург,&nbsp; ул.Б. Конюшенная, д. 19/8</address>
-            <p class="footer-tel">тел. <a href="tel:+78122757575" class="footer-tel-link">+7 (812) 275-75-75</a></p>
-            <a href="#" class="order red">Напишите нам</a>
+         <section class="map-contact">
+            <img  class="footer-map " src="img/map.png" width="1440" height="416" alt="Наш адрес Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+            <div class="contact">
+               <h2 class="footer-title">Nёrds design studio</h2>
+               <address class="footer-address">191186, Санкт-Петербург,&nbsp; ул.Б. Конюшенная, д. 19/8</address>
+               <p class="footer-tel">тел. <a href="tel:+78122757575" class="footer-tel-link">+7 (812) 275-75-75</a></p>
+               <a href="writeus.html" class="order red">Напишите нам</a>
+            </div>
          </section>
          <div class="footer-wrapper">
             <section class="social">
@@ -190,17 +192,17 @@
                <ul class="user-social reset-list">
                   <li>
                      <a class="icon-social" href="http://vk.com" aria-label="Ссылка на наш VK">
-                     <img src="img/icon/vk-icon.svg"  width="26" height="15"  alt="Иконка VK">
+                     <img class="img-social" src="img/icon/vk-icon.svg"  width="26" height="15"  alt="Иконка VK">
                      </a>
                   </li>
                   <li>
                      <a class="icon-social" href="https://www.facebook.com/" aria-label="Ссылка на наш Facebook">
-                     <img src="img/icon/fb-icon.svg" width="12" height="22" alt="Иконка Facebook">
+                     <img class="img-social" src="img/icon/fb-icon.svg" width="12" height="22" alt="Иконка Facebook">
                      </a>
                   </li>
                   <li>
                      <a class="icon-social" href="https://www.instagram.com" aria-label="Ссылка на наш Instagramm">
-                     <img src="img/icon/insta-icon.svg" width="21" height="21"  alt="Иконка Instagramm">
+                     <img class="img-social" src="img/icon/insta-icon.svg" width="21" height="21"  alt="Иконка Instagramm">
                      </a>
                   </li>
                </ul>
@@ -209,9 +211,9 @@
                <h2>Давайте дружить, это выгодно!</h2>
                <p>Скидка 10% для друзей из социальных сетей.</p>
             </section>
-         </div>
+         </div>         
       </footer>
-      <!--<section class="modal modal-contact">
+      <section class="modal modal-contact visually-hidden">
          <h2 class="modal-contact-header">Напишите нам</h2>
          <form class="modal-contact-form" action="https://echo.htmlacademy.ru/" method="post">
            <label class="form-user-name" for="modal-contact-form-name">
@@ -228,6 +230,6 @@
            <button type="submit" class="modal-contact-form-button red">Отправить</button>
          </form>
          <button type="button" class="modal-close" aria-label="Закрыть"></button>
-       </section>-->
+       </section>
    </body>
 </html>
