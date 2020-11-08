@@ -431,7 +431,7 @@ img {
 .about-us-lists {
     width: 660px
 }
-
+ 
 .about-us-dignity {
     width: 360px
 }
@@ -545,7 +545,6 @@ img {
     left: 0;
     width: 4px;
     height: 4px;
-    padding: 0 auto;
     border: 8px solid var(--white);
     border-radius: 50%;
     -webkit-box-shadow: 0 2px 1px rgba(0,0,0,.15);
