@@ -30,6 +30,7 @@
     --gray-medium: #E1E1E1;
     --gray-dark: #D5D5D5;
     --gray-special: #D7DCDF;
+    --gray-special-text: #666666;
     --gray-special-second: #D7DCDE;
     --gray-special-third: #B4B9BB;
     --gray-special-light: #DBDBDB;
@@ -221,6 +222,46 @@ img {
     font-size: 16px
 }
 
+.contact {
+    background-color: var(--white);
+    width: 219px;
+    min-height: 262px;
+    margin-top: 54px;
+    margin-bottom: 54px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 35px;
+    padding-bottom: 10px;
+}
+
+.footer-title {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--black)
+}
+
+.footer-address {
+    padding-top:7px;
+    color: var(--gray-special-text);
+    font-style: normal;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.footer-tel {
+    color: var(--gray-special-text);
+}
+  
+.footer-tel-link {
+    color: var(--gray-special-text);
+    font-style: normal;
+    font-size: 16px;
+    line-height: 18px;
+    text-decoration: none;
+}  
+
 .social {
     width: 260px;
     margin: 20px 140px 0 0
@@ -276,10 +317,6 @@ img {
 
 .icon-social:focus img {
     opacity: 30%
-}
-
-.main-index {
-    
 }
 
 .slider-background {
@@ -354,6 +391,7 @@ img {
 
 .order {
     display: inline-block;
+    vertical-align: inherit;
     border: 0 solid;
     border-radius: 3px;
     padding: 17px 40px 15px;
