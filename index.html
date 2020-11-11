@@ -34,24 +34,38 @@
                   <li class="slider-item">
                      <div class="slider-info">
                         <h3>Долго, дорого, скрупулезно.</h3>
-                        <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-                        <a href="#" class="order red">Узнать больше</a>
+                        <p>Математически выверенный дизайн <br /> для вашего сайта или мобильного приложения.</p>
+                        <a href="#" class="button-learn-more order red">Узнать больше</a>
                      </div>
-                     <img src="img/nerds-slide1.png" width="760" height="431" alt="Слайд с телефонами">
+                     <img class="slider-img-first" src="img/nerds-slide1.png" width="760" height="431" alt="Слайд с телефонами">
                   </li>
                   <li class="slider-item visually-hidden">
                      <h3>Любим математику как ни кто другой</h3>
                      <p>Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
-                     <a href="#" class="order red">Узнать больше</a>
-                     <img src="img/nerds-slide2.png" width="760" height="431" alt="Слайд с мониторами">
+                     <a href="#" class="button-learn-more order red">Узнать больше</a>
+                     <img class="slider-img-second" src="img/nerds-slide2.png" width="760" height="431" alt="Слайд с мониторами">
                      </li>
                      <li class="slider-item visually-hidden">
                      <h3>Только ночь, только хардкор</h3>
                      <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-                     <a href="#" class="order red">Узнать больше</a>
-                     <img src="img/nerds-slide3.png" width="760" height="431" alt="Слайд с планшетами">
+                     <a href="#" class="button-learn-more order red">Узнать больше</a>
+                     <img class="slider-img-third" src="img/nerds-slide3.png" width="760" height="431" alt="Слайд с планшетами">
                      </li>
                </ul>
+               <ul class="slider-pagination reset-list">
+                  <li class="slider-pagination filter-radio">
+                     <input class="visually-hidden slider-input-radio filter-input" type="radio" name="slider" value="shaving" id="slide-1">
+                     <label for="slide-1"></label>                           
+                  </li>
+                  <li class="slider-pagination filter-radio">
+                     <input class="visually-hidden slider-input-radio filter-input" type="radio" name="slider" value="shaving" id="slide-2">
+                     <label for="slide-2"></label>
+                  </li>
+                  <li class="slider-pagination filter-radio">
+                     <input class="visually-hidden slider-input-radio filter-input" type="radio" name="slider" value="shaving" id="slide-3">
+                     <label for="slide-3"></label>
+                  </li>
+               </ul>               
             </section>
          </div>
          <section class="features container">
@@ -74,47 +88,53 @@
             </ul>
          </section>
          <section class="about-us container">
-            <div class="about-us-lists">
+            <div class="about-us-container">
                <h2 class="about-us-header">Мы — маленькая, но гордая дизайн-студия из Краснодара.</h2>
-               <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчетпревыше креатива. Работаем не покладая рук, как роботы.</p>
-               <p class="about-us-paragraph">Выполняем заказы на разработку:</p>
-               <ul>
-                  <li>Веб-сайтов любой сложности</li>
-                  <li>Мобильных приложений для iOS и Android</li>
-                  <li>Слайдшоу и видео для корпоративных презентаций</li>
+               <div class="about-us-principle">              
+                  <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+               </div>
+               <div class="about-us-paragraph">               
+                  <p>Выполняем заказы на разработку:</p>
+               </div>
+               <ul class="about-us-list reset-list">
+                  <li class="about-us-list-item">Веб-сайтов любой сложности</li>
+                  <li class="about-us-list-item">Мобильных приложений для iOS и Android</li>
+                  <li class="about-us-list-item">Слайдшоу и видео для корпоративных презентаций</li>
                </ul>
             </div>
             <div class="about-us-dignity">
                <img src="img/nerds-illustration.png" width="360" height="208" alt="Нёрдс">
-               <p class="about-us-paragraph">с 2004 года Любим точность во всем:</p>
-               <ul>
-                  <li>146% Уровень самоотдачи</li>
-                  <li>100% Соблюдение сроков</li>
-                  <li>50% Минимальная предоплата</li>
+               <div class="about-us-dignity-paragraph">
+                  <p>с 2004 года Любим точность во всем:</p>
+               </div>
+               <ul class="about-us-dignity-list reset-list">
+                  <li><p class="about-us-dignity-numeral">146<b>%</b></p> Уровень самоотдачи</li>
+                  <li><p class="about-us-dignity-numeral">100<b>%</b></p> Соблюдение сроков</li>
+                  <li><p class="about-us-dignity-numeral">50<b>%</b></p> Минимальная предоплата</li>
                </ul>
             </div>
          </section>
          <section class="container">
             <h2 class="visually-hidden">Партнёры</h2>
             <ul class="partners reset-list">
-               <li>
+               <li class="partners-item partners-htmlacademy">
                   <a href="https://htmlacademy.ru/" aria-label="Ссылка на html academy">
-                  <img src="img/logo-htmlacademy.svg" width="199" height="68" alt="Логотип html academy">
+                  <img class="partners-img-htmlacademy" src="img/logo-htmlacademy.svg" width="199" height="68" alt="Логотип html academy">
                   </a>
                </li>
-               <li>
+               <li class="partners-item partners-borodinski">
                   <a href="#" aria-label="Ссылка на сайт барбершопа Borodinski">
-                  <img src="img/logo-borodinski.svg" width="209" height="90" alt="Логотип Borodinski">
+                  <img class="partners-img-borodinski" src="img/logo-borodinski.svg" width="209" height="90" alt="Логотип Borodinski">
                   </a>
                </li>
-               <li>
+               <li class="partners-item partners-pink">
                   <a href="#" aria-label="Ссылка на приложение Pink">
-                  <img src="img/logo-pink.svg" width="185" height="52" alt="Логотип Pink">
+                  <img class="partners-img-pink" src="img/logo-pink.svg" width="185" height="52" alt="Логотип Pink">
                   </a>
                </li>
-               <li>
+               <li class="partners-item partners-mishka">
                   <a href="#" aria-label="Ссылка на сайт Mishka">
-                  <img src="img/logo-mishka.svg" width="173" height="84" alt="Логотип Mishka">
+                  <img class="partners-img-mishka" src="img/logo-mishka.svg" width="173" height="84" alt="Логотип Mishka">
                   </a>
                </li>
             </ul>
@@ -127,7 +147,7 @@
                <h2 class="footer-title">Nёrds design studio</h2>
                <address class="footer-address">191186, Санкт-Петербург,&nbsp; ул.Б. Конюшенная, д. 19/8</address>
                <p class="footer-tel">тел. <a href="tel:+78122757575" class="footer-tel-link">+7 (812) 275-75-75</a></p>
-               <a href="writeus.html" class="order red">Напишите нам</a>
+               <a href="writeus.html" class="contact-button order red">Напишите нам</a>
             </div>
          </section>
          <div class="footer-wrapper">
